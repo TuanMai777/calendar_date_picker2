@@ -166,6 +166,7 @@ class CalendarDatePicker2Config {
     this.scrollViewOnScrolling,
     this.scrollViewController,
     this.dynamicCalendarRows,
+    this.colorHeader,
   })  : calendarType = calendarType ?? CalendarDatePicker2Type.single,
         firstDate = DateUtils.dateOnly(firstDate ?? DateTime(1970)),
         lastDate =
@@ -370,6 +371,9 @@ class CalendarDatePicker2Config {
   ///
   /// This will make calendar height dynamic to fit real month rows
   final bool? dynamicCalendarRows;
+
+  /// Color header
+  final Color? colorHeader;
 
   /// Copy the current [CalendarDatePicker2Config] with some new values
   CalendarDatePicker2Config copyWith({
