@@ -603,6 +603,7 @@ class CalendarDatePicker2WithActionButtonsConfig
     CalendarScrollViewOnScrolling? scrollViewOnScrolling,
     ScrollController? scrollViewController,
     bool? dynamicCalendarRows,
+    Color? colorHeader,
     this.gapBetweenCalendarAndButtons,
     this.cancelButtonTextStyle,
     this.cancelButton,
@@ -676,6 +677,7 @@ class CalendarDatePicker2WithActionButtonsConfig
           scrollViewOnScrolling: scrollViewOnScrolling,
           scrollViewController: scrollViewController,
           dynamicCalendarRows: dynamicCalendarRows,
+          colorHeader: colorHeader,
         );
 
   /// The gap between calendar and action buttons
@@ -779,6 +781,7 @@ class CalendarDatePicker2WithActionButtonsConfig
     CalendarScrollViewOnScrolling? scrollViewOnScrolling,
     ScrollController? scrollViewController,
     bool? dynamicCalendarRows,
+    Color? colorHeader,
   }) {
     return CalendarDatePicker2WithActionButtonsConfig(
       calendarType: calendarType ?? this.calendarType,
@@ -884,6 +887,7 @@ class CalendarDatePicker2WithActionButtonsConfig
           scrollViewOnScrolling ?? this.scrollViewOnScrolling,
       scrollViewController: scrollViewController ?? this.scrollViewController,
       dynamicCalendarRows: dynamicCalendarRows ?? this.dynamicCalendarRows,
+      colorHeader: colorHeader ?? this.colorHeader,
     );
   }
 }
